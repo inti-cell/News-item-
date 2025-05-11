@@ -39,21 +39,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Розташовуємо новини вертикально */
         }
-        .main-content {
-            background: #f1f8e9;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            padding: 3rem;
-            text-align: center;
-        }
-         .news-card {
+        .news-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             margin: 1rem 0;
             padding: 1rem;
             transition: transform 0.2s ease;
+            width: 100%; /* Займає всю ширину контейнера */
+            max-width: 600px; /* Обмежуємо максимальну ширину картки */
         }
         .news-card:hover {
             transform: scale(1.01);
@@ -101,6 +97,7 @@
     </header>
     <div class="container">
          <div class="news-card"><a href="news1.html" class="news-title">З Днем народження, Шанкс!</a></div>
+         <div class="news-card"><a href="news2.html" class="news-title">Вчені довели користь пива</a></div>
     </div>
     <footer class="footer">
         &copy; 2025 Всі права захищені. <span style="font-weight: bold;">Яворів-Таймс</span> | Розроблено <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
