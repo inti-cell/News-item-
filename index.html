@@ -7,16 +7,16 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Гарний градієнтний фон */
+            background: linear-gradient(135deg, #e0f2f7, #ccff90); /* Світло-зелений градієнт */
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #388e3c; /* Темно-зелений текст */
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Займає всю висоту вікна */
+            min-height: 100vh;
         }
         header {
-            background: rgba(70, 130, 180, 0.8); /* Напівпрозорий steel blue */
+            background: rgba(56, 142, 60, 0.8); /* Напівпрозорий темно-зелений */
             color: white;
             padding: 2rem 0;
             text-align: center;
@@ -27,24 +27,28 @@
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
+        header p {
+            color: #e8f5e9; /* Світло-зелений підзаголовок */
+            margin-top: 0.5rem;
+        }
         .container {
-            max-width: 960px; /* Збільшений контейнер */
+            max-width: 960px;
             margin: 0 auto;
             padding: 2rem;
-            flex-grow: 1; /* Займає вільний простір */
+            flex-grow: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .main-content {
-            background: white;
+            background: #f1f8e9; /* Світло-зелений фон контенту */
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             padding: 3rem;
             text-align: center;
         }
         .main-content h2 {
-            color: #4682b4;
+            color: #388e3c; /* Темно-зелений заголовок контенту */
             font-size: 2rem;
             margin-top: 0;
             margin-bottom: 1.5rem;
@@ -52,18 +56,18 @@
         .main-content p {
             font-size: 1.1rem;
             line-height: 1.7;
-            color: #555;
+            color: #43a047; /* Зелений текст параграфа */
         }
         .footer {
-            background: #f8f8f8;
-            color: #777;
+            background: #e8f5e9; /* Світло-зелений фон футера */
+            color: #66bb6a; /* Зелений текст футера */
             text-align: center;
             padding: 1.5rem 0;
             font-size: 0.9rem;
-            border-top: 1px solid #eee;
+            border-top: 1px solid #c8e6c9; /* Світло-зелена лінія */
         }
         .footer a {
-            color: #4682b4;
+            color: #388e3c; /* Темно-зелене посилання */
             text-decoration: none;
         }
         .footer a:hover {
@@ -74,7 +78,7 @@
 <body>
     <header>
         <h1>Яворів-Таймс</h1>
-        <p style="color: #eee; margin-top: 0.5rem;">Актуальні новини Яворівщини</p>
+        <p>Актуальні новини Яворівщини</p>
     </header>
     <div class="container">
         <div class="main-content">
