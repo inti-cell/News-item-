@@ -3,67 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рандомні новини</title>
+    <title>Яворів-Таймс</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f8ff;
+            background: linear-gradient(135deg, #f0f8ff, #e6f7ff); /* Гарний градієнтний фон */
             margin: 0;
             padding: 0;
-            color: #444;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Займає всю висоту вікна */
         }
         header {
-            background: #4682b4;
+            background: rgba(70, 130, 180, 0.8); /* Напівпрозорий steel blue */
             color: white;
-            padding: 1rem;
+            padding: 2rem 0;
             text-align: center;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 1rem;
+            max-width: 960px; /* Збільшений контейнер */
+            margin: 0 auto;
+            padding: 2rem;
+            flex-grow: 1; /* Займає вільний простір */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .news-card {
+        .main-content {
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 1rem 0;
-            padding: 1rem;
-            transition: transform 0.2s ease;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 3rem;
+            text-align: center;
         }
-        .news-card:hover {
-            transform: scale(1.01);
-        }
-        .news-title {
-            margin: 0;
-            font-size: 1.1rem;
+        .main-content h2 {
             color: #4682b4;
-            cursor: pointer;
-            display: block; /* Зробити посилання блоковим елементом для клікабельності всієї картки */
-            text-decoration: none; /* Прибрати підкреслення за замовчуванням */
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        .main-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        .footer {
+            background: #f8f8f8;
+            color: #777;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+        .footer a {
+            color: #4682b4;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Абсолютно Рандомні Новини</h1>
+        <h1>Яворів-Таймс</h1>
+        <p style="color: #eee; margin-top: 0.5rem;">Актуальні новини Яворівщини</p>
     </header>
     <div class="container">
-        <div id="random-news-list">
-            <div class="news-card"><a href="news1.html" class="news-title">На кухні виявлено розумного робота-кухаря!</a></div>
-            <div class="news-card"><a href="news2.html" class="news-title">Вчені розшифрували котячу мову!</a></div>
-            <div class="news-card"><a href="news3.html" class="news-title">Зафіксовано випадки левітації бруківки!</a></div>
-            <div class="news-card"><a href="news4.html" class="news-title">У парку помітили дерева, що виконують синхронні танці!</a></div>
-            <div class="news-card"><a href="news5.html" class="news-title">Розкрито таємницю зникнення шкарпеток у пральній машині!</a></div>
-            <div class="news-card"><a href="news6.html" class="news-title">Морква почала розмовляти!</a></div>
-            <div class="news-card"><a href="news7.html" class="news-title">На пляжі знайдено загадкового морського гостя!</a></div>
-            <div class="news-card"><a href="news8.html" class="news-title">Небо заполонили хмари у формі котів!</a></div>
-            <div class="news-card"><a href="news9.html" class="news-title">Випадки телепортації чашок кави!</a></div>
-            <div class="news-card"><a href="news10.html" class="news-title">Квіти почали співати!</a></div>
-        </div>
+        <div class="main-content">
+            <h2>Слідкуйте за останніми подіями!</h2>
+            <p>На нашому сайті ви знайдете найсвіжіші та найважливіші новини з Яворівського району та околиць. Будьте в курсі подій разом з "Яворів-Таймс"!</p>
+            </div>
     </div>
-    <div class="footer">
-        Створено для навчання. Підписуйтесь: <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
-    </div>
+    <footer class="footer">
+        &copy; 2025 Всі права захищені. <span style="font-weight: bold;">Яворів-Таймс</span> | Розроблено <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
+    </footer>
 </body>
 </html>
