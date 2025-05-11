@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f8ff; /* Light blue background */
+            background: #f0f8ff;
             margin: 0;
             padding: 0;
             color: #444;
         }
         header {
-            background: #4682b4; /* Steel blue header */
+            background: #4682b4;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -39,26 +39,8 @@
             font-size: 1.1rem;
             color: #4682b4;
             cursor: pointer;
-        }
-        .news-content {
-            display: none;
-            margin-top: 0.5rem;
-            line-height: 1.6;
-        }
-        .views {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 0.5rem;
-        }
-        .footer {
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.75rem;
-            color: #aaa;
-        }
-        a {
-            color: #4682b4;
-            text-decoration: none;
+            display: block; /* Зробити посилання блоковим елементом для клікабельності всієї картки */
+            text-decoration: none; /* Прибрати підкреслення за замовчуванням */
         }
     </style>
 </head>
@@ -67,113 +49,21 @@
         <h1>Абсолютно Рандомні Новини</h1>
     </header>
     <div class="container">
-        <div id="random-news-list"></div>
+        <div id="random-news-list">
+            <div class="news-card"><a href="news1.html" class="news-title">На кухні виявлено розумного робота-кухаря!</a></div>
+            <div class="news-card"><a href="news2.html" class="news-title">Вчені розшифрували котячу мову!</a></div>
+            <div class="news-card"><a href="news3.html" class="news-title">Зафіксовано випадки левітації бруківки!</a></div>
+            <div class="news-card"><a href="news4.html" class="news-title">У парку помітили дерева, що виконують синхронні танці!</a></div>
+            <div class="news-card"><a href="news5.html" class="news-title">Розкрито таємницю зникнення шкарпеток у пральній машині!</a></div>
+            <div class="news-card"><a href="news6.html" class="news-title">Морква почала розмовляти!</a></div>
+            <div class="news-card"><a href="news7.html" class="news-title">На пляжі знайдено загадкового морського гостя!</a></div>
+            <div class="news-card"><a href="news8.html" class="news-title">Небо заполонили хмари у формі котів!</a></div>
+            <div class="news-card"><a href="news9.html" class="news-title">Випадки телепортації чашок кави!</a></div>
+            <div class="news-card"><a href="news10.html" class="news-title">Квіти почали співати!</a></div>
+        </div>
     </div>
     <div class="footer">
         Створено для навчання. Підписуйтесь: <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
     </div>
-
-    <script>
-        const randomNewsData = [
-            {
-                id: "kuchenniy-robot",
-                title: "На кухні виявлено розумного робота-кухаря!",
-                content: "Дивовижна знахідка в одній із квартир міста: кухонний комбайн, який самостійно готує страви за рецептами з інтернету. Експерти намагаються з'ясувати походження технології.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "mova-kotiv",
-                title: "Вчені розшифрували котячу мову!",
-                content: "Міжнародна група лінгвістів заявила про прорив у розумінні муркотіння та нявкання котів. Розроблено додаток-перекладач.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "lityucha-bruschatka",
-                title: "Зафіксовано випадки левітації бруківки!",
-                content: "Мешканці кількох вулиць повідомляють про незрозумілі випадки підняття в повітря окремих елементів бруківки. Геологи та фізики досліджують аномалію.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "tancyuyuchi-dereva",
-                title: "У парку помітили дерева, що виконують синхронні танці!",
-                content: "Відвідувачі центрального парку стали свідками незвичайного явища: дерева плавно розгойдуються в унісон, ніби виконуючи вальс.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "zniknennya-noskiv",
-                title: "Розкрито таємницю зникнення шкарпеток у пральній машині!",
-                content: "Група інженерів нарешті знайшла пояснення цьому вічному питанню. Виявляється, у деяких моделях пральних машин існує мініатюрний портал до іншого виміру.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "golos-morcvy",
-                title: "Морква почала розмовляти!",
-                content: "Фермери повідомляють, що під час збору врожаю морква видає тихі, але розбірливі звуки, схожі на шепіт. Біологи намагаються зрозуміти причину.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "zamorsky-gost",
-                title: "На пляжі знайдено загадкового морського гостя!",
-                content: "Після шторму на берег викинуло невідому істоту, що світиться в темряві. Вчені проводять аналізи.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "hmary-u-formi-kotiv",
-                title: "Небо заполонили хмари у формі котів!",
-                content: "Протягом усього дня мешканці спостерігали надзвичайно чіткі хмари, що нагадували силуети котів різних порід.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "teleportaciya-chashky",
-                title: "Випадки телепортації чашок кави!",
-                content: "У кількох офісах зафіксовано дивні випадки миттєвого переміщення чашок з кавою з одного столу на інший. Версії варіюються від жартівників до квантової фізики.",
-                views: Math.floor(Math.random() * 2000) + 50
-            },
-            {
-                id: "pisni-kvitiv",
-                title: "Квіти почали співати!",
-                content: "У ботанічному саду зафіксовано незвичайне явище: деякі види квітів видають мелодійні звуки, схожі на тихий спів птахів.",
-                views: Math.floor(Math.random() * 2000) + 50
-            }
-        ];
-
-        const randomNewsList = document.getElementById("random-news-list");
-
-        randomNewsData.forEach(news => {
-            const card = document.createElement("div");
-            card.className = "news-card";
-            card.innerHTML = `
-                <a href="#${news.id}" class="news-title">${news.title}</a>
-                <div class="news-content" id="${news.id}">${news.content}<br><br>
-                Автор: <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
-                <div class="views">Переглядів: ${news.views}</div>
-                </div>
-            `;
-            randomNewsList.appendChild(card);
-        });
-
-        document.querySelectorAll(".news-title").forEach(title => {
-            title.addEventListener("click", function(e) {
-                e.preventDefault();
-                const content = this.nextElementSibling;
-                content.style.display = content.style.display === "block" ? "none" : "block";
-                if (this.href.includes("#")) {
-                    history.replaceState(null, null, this.href);
-                }
-            });
-        });
-
-        window.addEventListener("load", () => {
-            const id = window.location.hash.slice(1);
-            if (id) {
-                const element = document.getElementById(id);
-                if (element) {
-                    element.style.display = "block";
-                    element.scrollIntoView({ behavior: "smooth" });
-                }
-            }
-        });
-    </script>
-
 </body>
 </html>
