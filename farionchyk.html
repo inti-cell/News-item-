@@ -58,11 +58,12 @@
             text-decoration: underline;
             color: #43a047;
         }
-        .image-container { /* Контейнер для тексту "Фаріончик" та зображення */
+        .image-container { /* Контейнер для тексту "Фаріончик" та першого зображення */
             display: flex;
             flex-direction: column;
             align-items: center; /* Центруємо по горизонталі */
             width: 100%; /* Займає всю ширину контейнера */
+            margin-bottom: 1rem;
         }
         .image-caption {
             color: #388e3c;
@@ -74,8 +75,27 @@
         .news-image {
             max-width: 100%;
             height: auto;
-            margin-bottom: 1rem;
             border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .secondary-image-container { /* Контейнер для другого зображення та підпису */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .image-source {
+            color: #757575;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .image-source a {
+            color: #388e3c;
+            text-decoration: none;
+        }
+        .image-source a:hover {
+            text-decoration: underline;
         }
         .footer {
             background: #e8f5e9;
@@ -119,6 +139,10 @@
         <p>Бо з’явилася Вона.</p>
         <p>Ірина Місяйло.</p>
         <p>Не менш вперта. Не менш вибухова. З тією ж пристрастю до мовних правил, наголосів і суржику, який вона безжально нищила на уроках, у коментарях, і навіть у снах своїх студентів. Вона була не просто наступницею — вона стала уособленням нової хвилі мовного ренесансу.</p>
+        <div class="secondary-image-container">
+            <img src="https://github.com/inti-cell/News-item-/blob/main/Screenshot_20250512_153943_Instagram.jpg?raw=true" alt="Фото Ірини Фаріон" class="news-image">
+            <p class="image-source">[Фото взято з Instagram <a href="https://instagram.com/iryna_farion" target="_blank">@iryna_farion</a>]</p>
+        </div>
         <p>«Я не копія! Я — нова версія, в оновленому корпусі!» — казала вона, стукаючи по парті в аудиторії.</p>
         <p>Учні тряслися від страху, але... парадоксально — любили її. Бо вона не просто карала — вона надихала. Її меми стали вірусними, її лекції — легендарними. Вона навіть придумала новий слоган:</p>
         <blockquote>
