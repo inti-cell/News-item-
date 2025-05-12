@@ -31,12 +31,15 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
+            align-items: center; /* Центруємо елементи всередині news-content */
         }
         .news-title {
             color: #388e3c;
             font-size: 1.5rem;
             margin-top: 0;
             margin-bottom: 1rem;
+            text-align: center; /* Центруємо заголовок новини */
+            width: 100%; /* Займає всю ширину контейнера */
         }
         .back-link-container {
             text-align: center;
@@ -54,6 +57,19 @@
         .back-link:hover {
             text-decoration: underline;
             color: #43a047;
+        }
+        .image-container { /* Контейнер для тексту "Фаріончик" та зображення */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центруємо по горизонталі */
+            width: 100%; /* Займає всю ширину контейнера */
+        }
+        .image-caption {
+            color: #388e3c;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            text-align: center; /* Центруємо текст "Фаріончик" */
+            font-weight: bold;
         }
         .news-image {
             max-width: 100%;
@@ -76,6 +92,13 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        blockquote {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            border-left: 3px solid #66bb6a;
+            font-style: italic;
+            color: #43a047;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +110,10 @@
     </header>
     <div class="news-content">
         <h2 class="news-title">Фаріончик</h2>
-        <img src="https://github.com/inti-cell/News-item-/blob/main/Screenshot_20250512_145208_Instagram.jpg?raw=true" alt="Ірина Місяйло" class="news-image">
+        <div class="image-container">
+            <p class="image-caption">Фаріончик</p>
+            <img src="https://github.com/inti-cell/News-item-/blob/main/Screenshot_20250512_145208_Instagram.jpg?raw=true" alt="Ірина Місяйло" class="news-image">
+        </div>
         <p>Смерть Ірини Фаріон — це не кінець</p>
         <p>Коли відгриміли останні промови, і мовна гроза, що здіймалась голосом Ірини Фаріон, вщухла навіки, здавалося, що світ української філології осиротів. Хтось зітхнув з полегшенням, хтось — з тугою. Але пустка довго не залишалася порожньою.</p>
         <p>Бо з’явилася Вона.</p>
