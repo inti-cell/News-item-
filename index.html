@@ -20,7 +20,7 @@
             color: white;
             padding: 2rem 0;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem; /* Зменшено відступ знизу шапки */
         }
         header h1 {
             font-size: 2.5rem;
@@ -34,8 +34,7 @@
         .container {
             max-width: 960px;
             margin: 0 auto;
-            padding: 2rem;
-            flex-grow: 1;
+            padding: 1rem 2rem; /* Зменшено верхній відступ контейнера */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,7 +44,7 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 1rem 0;
+            margin: 0.5rem 0; /* Зменшено вертикальні відступи між новинами */
             padding: 1rem;
             transition: transform 0.2s ease;
         }
@@ -60,17 +59,6 @@
             display: block;
             text-decoration: none;
         }
-        .main-content h2 {
-            color: #388e3c;
-            font-size: 2rem;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        .main-content p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #43a047;
-        }
         .footer {
             background: #e8f5e9;
             color: #66bb6a;
@@ -78,6 +66,7 @@
             padding: 1.5rem 0;
             font-size: 0.9rem;
             border-top: 1px solid #c8e6c9;
+            margin-top: 2rem; /* Додано відступ зверху футера */
         }
         .footer a {
             color: #388e3c;
