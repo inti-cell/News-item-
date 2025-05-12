@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Яворів-Таймс</title>
+    <title>Партія Межа</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e0f2f7, #ccff90);
+            background: linear-gradient(135deg, #e0f7e6, #ccff90); /* Світло-зелений градієнт */
             margin: 0;
             padding: 0;
-            color: #388e3c;
+            color: #2e7d32; /* Темно-зелений текст */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
         header {
-            background: rgba(56, 142, 60, 0.8);
+            background: rgba(46, 125, 50, 0.8); /* Напівпрозорий темно-зелений */
             color: white;
             padding: 2rem 0;
             text-align: center;
@@ -27,10 +27,6 @@
             margin: 0;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        header p {
-            color: #e8f5e9;
-            margin-top: 0.5rem;
-        }
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -39,68 +35,50 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Розташовуємо новини вертикально */
+            flex-direction: column;
+            gap: 20px; /* Збільшив відстань між пунктами */
         }
-        .news-card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 1rem 0;
-            padding: 1rem;
-            transition: transform 0.2s ease;
-            width: 100%; /* Займає всю ширину контейнера */
-            max-width: 600px; /* Обмежуємо максимальну ширину картки */
+        .menu-item {
+            background-color: #f1f8e9; /* Світло-зелений фон блоків меню */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s ease-in-out; /* Додав плавний ефект при наведенні */
         }
-        .news-card:hover {
-            transform: scale(1.01);
+        .menu-item:hover {
+            transform: scale(1.05); /* Невелике збільшення при наведенні */
         }
-        .news-title {
-            margin: 0;
-            font-size: 1.1rem;
-            color: #388e3c;
-            cursor: pointer;
-            display: block;
+        .menu-item a {
+            color: #388e3c; /* Темно-зелений колір посилань */
             text-decoration: none;
+            font-size: 1.5rem; /* Збільшив розмір шрифту посилань */
+            font-weight: bold;
         }
-        .main-content h2 {
-            color: #388e3c;
-            font-size: 2rem;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        .main-content p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #43a047;
+        .menu-item a:hover {
+            text-decoration: underline;
         }
         .footer {
-            background: #e8f5e9;
-            color: #66bb6a;
+            background: #e8f5e9; /* Світло-зелений фон футера */
+            color: #66bb6a; /* Зелений колір тексту футера */
             text-align: center;
             padding: 1.5rem 0;
             font-size: 0.9rem;
             border-top: 1px solid #c8e6c9;
         }
-        .footer a {
-            color: #388e3c;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Яворів-Таймс</h1>
-        <p>Привіт із Яворова!</p>
+        <h1>Партія Межа</h1>
     </header>
     <div class="container">
-         <div class="news-card"><a href="news1.html" class="news-title">З Днем народження, Шанкс!</a></div>
-         <div class="news-card"><a href="news2.html" class="news-title">Вчені довели користь пива</a></div>
+        <div class="menu-item"><a href="yanusya.html">Януся</a></div>
+        <div class="menu-item"><a href="party.html">НАША ПАРТІЯ</a></div>
+        <div class="menu-item"><a href="cooperation.html">СПІВПРАЦЯ</a></div>
     </div>
     <footer class="footer">
-        &copy; 2025 Всі права захищені. <span style="font-weight: bold;">Яворів-Таймс</span> | Розроблено <a href="https://instagram.com/misha_stebivka" target="_blank">@misha_stebivka</a>
+        &copy; 2025 Усі права захищені. "МЕЖА"
     </footer>
 </body>
 </html>
