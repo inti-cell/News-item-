@@ -13,14 +13,14 @@
             color: #388e3c;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Забезпечує видимість футера на малих сторінках */
         }
         header {
             background: rgba(56, 142, 60, 0.8);
             color: white;
             padding: 2rem 0;
             text-align: center;
-            margin-bottom: 1rem; /* Зменшено відступ знизу шапки */
+            margin-bottom: 1rem;
         }
         header h1 {
             font-size: 2.5rem;
@@ -34,17 +34,18 @@
         .container {
             max-width: 960px;
             margin: 0 auto;
-            padding: 1rem 2rem; /* Зменшено верхній відступ контейнера */
+            padding: 1rem 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            flex-grow: 1; /* Контейнер займає доступний вертикальний простір */
         }
         .news-card {
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin: 0.5rem 0; /* Зменшено вертикальні відступи між новинами */
+            margin: 0.5rem 0;
             padding: 1rem;
             transition: transform 0.2s ease;
         }
@@ -66,7 +67,6 @@
             padding: 1.5rem 0;
             font-size: 0.9rem;
             border-top: 1px solid #c8e6c9;
-            margin-top: 2rem; /* Додано відступ зверху футера */
         }
         .footer a {
             color: #388e3c;
